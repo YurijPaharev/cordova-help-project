@@ -6,19 +6,25 @@
     "main": "index.js",
     "scripts": {
         "pre-setup-manifest": "node pre-setup-manifest.js",
+        "build-ios": "cordova build ios",
+        "run-ios": "cordova run ios",
+        "build-android": "npm run pre-setup-manifest;cordova build android",
         "run-android": "npm run pre-setup-manifest;cordova run android"
     },
     "author": "https://github.com/YurijPaharev",
     "license": "Apache-2.0",
     "dependencies": {
-        "cordova-android": "^7.0.0",
+        "cordova-android": "^7.1.1",
+        "cordova-plugin-idnow": "../../cordova-plugin-idnow",
         "cordova-plugin-whitelist": "^1.3.3",
+        "idnowplugin": "file:../../cordova-plugin-idnow",
         "ts-node": "^3.3.0",
         "xml2json": "^0.11.2"
     },
     "cordova": {
         "plugins": {
-            "cordova-plugin-whitelist": {}
+            "cordova-plugin-whitelist": {},
+            "cordova-plugin-idnow": {}
         },
         "platforms": [
             "android"
