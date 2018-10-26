@@ -3,8 +3,10 @@ const path = require('path');
 const parser = require('xml2json');
 
 const requiredPathToManifest = __dirname.split(path.sep);
-const modifiedPathToManifest = path.join(...requiredPathToManifest);
-const fullPath = `/${modifiedPathToManifest}/platforms/android/app/src/main/AndroidManifest.xml`;
+const fullPath = path.join(
+    ...requiredPathToManifest,
+    'platforms', 'android', 'app', 'src', 'main', 'AndroidManifest.xml'
+);
 
 fs.readFile(fullPath, 'utf-8', function(err, data) {
   const json = parser.toJson(data);
