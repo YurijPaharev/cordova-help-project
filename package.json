@@ -1,0 +1,27 @@
+{
+    "name": "cordova-help-project",
+    "displayName": "HelpProject",
+    "version": "1.0.0",
+    "description": "Cordova help project for integration with idNow plugins",
+    "main": "index.js",
+    "scripts": {
+        "pre-setup-manifest": "node pre-setup-manifest.js",
+        "run-android": "npm run pre-setup-manifest;cordova run android"
+    },
+    "author": "https://github.com/YurijPaharev",
+    "license": "Apache-2.0",
+    "dependencies": {
+        "cordova-android": "^7.0.0",
+        "cordova-plugin-whitelist": "^1.3.3",
+        "ts-node": "^3.3.0",
+        "xml2json": "^0.11.2"
+    },
+    "cordova": {
+        "plugins": {
+            "cordova-plugin-whitelist": {}
+        },
+        "platforms": [
+            "android"
+        ]
+    }
+}
