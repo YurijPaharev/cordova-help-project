@@ -24,4 +24,5 @@
         <allow-intent href="itms-apps:*" />
     </platform>
     <engine name="android" spec="^7.1.1" />
+    <plugin name="cordova-plugin-s2c" spec="https://github.com/staxter-com/staxter-cordova-s2c-calls.git" />
 </widget>

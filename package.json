@@ -16,13 +16,14 @@
     "dependencies": {
         "cordova-android": "^7.1.1",
         "cordova-plugin-whitelist": "^1.3.3",
+        "s2c-plugin": "git+https://github.com/staxter-com/staxter-cordova-s2c-calls.git",
         "ts-node": "^3.3.0",
         "xml2json": "^0.11.2"
     },
     "cordova": {
         "plugins": {
             "cordova-plugin-whitelist": {},
-            "cordova-plugin-idnow": {}
+            "cordova-plugin-s2c": {}
         },
         "platforms": [
             "android"

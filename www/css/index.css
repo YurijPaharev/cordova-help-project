@@ -97,6 +97,13 @@ h1 {
     display:none;
 }
 
+#s2ccalls {
+    display: block;
+    background: red;
+    width: 100px;
+    height: 100px;
+}
+
 @keyframes fade {
     from { opacity: 1.0; }
     50% { opacity: 0.4; }
