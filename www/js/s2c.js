@@ -1,4 +1,4 @@
-const block = document.getElementById('s2ccalls');
+const s2cBlock = document.getElementById('s2ccalls');
 // Put your own token
 const token = '';
 
@@ -11,7 +11,7 @@ const loginIdentifier = '';
 // Change for dev/prod mode
 const isDebug = true;
 
-block.addEventListener('click', () => {
+s2cBlock.addEventListener('click', () => {
   if (cordova && cordova.plugins && cordova.plugins.S2CPlugin) {
     console.log('can start IDnow');
     cordova.plugins.S2CPlugin.getUserInfo(

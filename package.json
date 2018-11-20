@@ -14,7 +14,8 @@
     "author": "https://github.com/YurijPaharev",
     "license": "Apache-2.0",
     "dependencies": {
-        "cordova-android": "^7.1.1",
+        "cordova-android": "^7.1.2",
+        "cordova-plugin-s2c": "https://github.com/staxter-com/staxter-cordova-s2c-calls.git",
         "cordova-plugin-whitelist": "^1.3.3",
         "s2c-plugin": "git+https://github.com/staxter-com/staxter-cordova-s2c-calls.git",
         "ts-node": "^3.3.0",
